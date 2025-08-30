@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Md. Rasel Ahmed — Portfolio</title>
+
+  <!-- Google Fonts + FontAwesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site">
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <div class="logo">RA</div>
+          <div class="brand-text">
+            <div class="brand-name">Md. Rasel Ahmed</div>
+            <div class="brand-sub">Senior Full-Stack Engineer</div>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact" class="cta">Contact</a>
+        </nav>
+
+        <button id="menuToggle" class="hamb"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner container">
+          <div class="hero-left">
+            <div class="avatar">
+              <!-- Replace with your image URL -->
+              <img src="https://images.unsplash.com/photo-1545996124-8f2b9d37b8b7?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Profile">
+              <div class="avatar-ring"></div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <h1 class="name">Md. Rasel Ahmed</h1>
+            <p class="role">Senior Full-Stack Engineer • System Designer • Open Source Contributor</p>
+
+            <p class="hero-desc">
+              আমি scalable এবং maintainable ওয়েব সিস্টেম বানাই — Frontend থেকে Backend, Cloud ও Security পর্যন্ত। প্রফেশনাল প্রজেক্ট ডেলিভারি ও টিম লিডিং—এইটাই আমার কাজের লক্ষ্য।
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#contact" class="btn primary"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+              <a href="#" class="btn ghost" onclick="downloadVCard(event)"><i class="fa-solid fa-download"></i> vCard</a>
+              <a href="#" class="btn ghost" onclick="printProfile(event)"><i class="fa-solid fa-print"></i> Print</a>
+            </div>
+
+            <div class="socials">
+              <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT + CONTACT LEFT COLUMN -->
+      <section class="container grid">
+        <div class="col main-col">
+          <div id="about" class="card fade-up">
+            <h2>About</h2>
+            <p>
+              আমি এক্সপেরিয়ান্সড ফুল-স্ট্যাক ডেভেলপার, যিনি উচ্চ-ট্রাফিক সিস্টেম, মাইক্রো সার্ভিস আর্কিটেকচার এবং রিয়েল-টাইম অ্যাপ্লিকেশন ডিজাইন করতে ভালবাসি। Performance, security এবং developer experience-এ জোর দিই।
+            </p>
+
+            <div class="info-grid">
+              <div><strong>Full Name</strong><span>Md. Rasel Ahmed</span></div>
+              <div><strong>Location</strong><span>Dhaka, Bangladesh</span></div>
+              <div><strong>Email</strong><span>rasel@example.com</span></div>
+              <div><strong>Phone</strong><span>+880 1X-XXXX-XXXX</span></div>
+            </div>
+          </div>
+
+          <div id="skills" class="card fade-up">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="skill">
+                <div class="skill-head"><span>JavaScript / TypeScript</span><span>95%</span></div>
+                <div class="bar"><i style="width:95%"></i></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-head"><span>React / Next.js</span><span>92%</span></div>
+                <div class="bar"><i style="width:92%"></i></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-head"><span>Node.js / Express</span><span>90%</span></div>
+                <div class="bar"><i style="width:90%"></i></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-head"><span>Python / Django</span><span>86%</span></div>
+                <div class="bar"><i style="width:86%"></i></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-head"><span>AWS / DevOps</span><span>84%</span></div>
+                <div class="bar"><i style="width:84%"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="projects" class="card fade-up">
+            <h2>Projects</h2>
+            <div class="projects">
+              <article class="project-card">
+                <div class="thumb"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80&auto=format&fit=crop" alt=""></div>
+                <div class="meta">
+                  <h3>Enterprise E-Commerce (MERN)</h3>
+                  <p>Multi-tenant platform with scalable order pipeline, payments and analytics.</p>
+                  <div class="tags"><span>MERN</span><span>Stripe</span><span>Redis</span></div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="thumb"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&auto=format&fit=crop" alt=""></div>
+                <div class="meta">
+                  <h3>Realtime Chat Platform</h3>
+                  <p>Socket.io based chat with presence, read receipts & media support.</p>
+                  <div class="tags"><span>Socket.io</span><span>Node</span><span>Kubernetes</span></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT / SIDEBAR -->
+        <aside class="col side-col">
+          <div class="card contact-card fade-up" id="contact">
+            <h2>Contact</h2>
+            <p class="muted">Send a quick message — response within 48 hours</p>
+
+            <form id="contactForm" class="contact-form" onsubmit="submitContact(event)">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" required>
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required>
+              </label>
+
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+
+              <button class="btn primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+            </form>
+
+            <div class="contact-meta">
+              <div><i class="fa-solid fa-envelope"></i> rasel@example.com</div>
+              <div><i class="fa-solid fa-phone"></i> +880 1X-XXXX-XXXX</div>
+              <div><i class="fa-solid fa-map-marker-alt"></i> Dhaka, Bangladesh</div>
+            </div>
+          </div>
+
+          <div class="card mini-card fade-up">
+            <h3>Quick Stats</h3>
+            <div class="minigrid">
+              <div><strong>34</strong><span>Projects</span></div>
+              <div><strong>12+</strong><span>Clients</span></div>
+              <div><strong>10+</strong><span>Years</span></div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© <span id="yr"></span> Md. Rasel Ahmed — All Rights Reserved</div>
+      <div class="muted">Designed with ♥ • Professional UI</div>
+    </footer>
+  </div>
+
+  <!-- Small JS -->
+  <script>
+    // set year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.querySelector('.menu');
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+
+    // simple contact submit (stub)
+    function submitContact(e) {
+      e.preventDefault();
+      alert('Message sent — placeholder. Replace with real backend or form action.');
+      e.target.reset();
+    }
+
+    // vCard download
+    function downloadVCard(e) {
+      e.preventDefault();
+      const v = `BEGIN:VCARD
+VERSION:3.0
+FN:Md Rasel Ahmed
+TEL:+8801XXXXXXXXX
+EMAIL:rasel@example.com
+END:VCARD`;
+      const blob = new Blob([v], {type:'text/vcard'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'rasel.vcf';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function printProfile(e){ e.preventDefault(); window.print(); }
+
+    // animate fade-up on scroll
+    const faders = document.querySelectorAll('.fade-up');
+    const obs = new IntersectionObserver((entries, ob) => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          en.target.classList.add('inview');
+          ob.unobserve(en.target);
+        }
+      });
+    }, {threshold: 0.12});
+    faders.forEach(f => obs.observe(f));
+  </script>
+</body>
+</html>
