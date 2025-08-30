@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Profile — Rasel Ahmed</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="logo-mark" aria-hidden="true">RA</div>
+          <div class="brand-text">
+            <div class="name">Md. Rasel Ahmed</div>
+            <div class="role">Senior Full-Stack Engineer</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="#about" class="nav-link">পরিচিতি</a>
+          <a href="#skills" class="nav-link">দক্ষতা</a>
+          <a href="#projects" class="nav-link">প্রকল্প</a>
+          <a href="#contact" class="nav-link primary">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="container content-grid">
+      <!-- LEFT: main content -->
+      <section class="main-column">
+        <section id="about" class="card hero-card">
+          <div class="hero-left">
+            <div class="avatar">
+              <img src="https://images.unsplash.com/photo-1545996124-8f2b9d37b8b7?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Profile Photo">
+            </div>
+            <div class="quick-stats">
+              <div class="stat">
+                <div class="stat-num">10+</div>
+                <div class="stat-label">Years</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">34</div>
+                <div class="stat-label">Projects</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <h1 class="headline">Md. Rasel Ahmed</h1>
+            <p class="lead">Senior Full-Stack Engineer — scalable systems, robust APIs, and delightful UX.</p>
+
+            <div class="badges">
+              <span class="badge"><i class="fa-solid fa-laptop-code"></i> MERN</span>
+              <span class="badge"><i class="fa-solid fa-cloud"></i> AWS</span>
+              <span class="badge"><i class="fa-solid fa-lock"></i> Security</span>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#contact"><i class="fa-solid fa-envelope"></i> Hire Me</a>
+              <a class="btn ghost" href="#" onclick="downloadVCard(event)"><i class="fa-solid fa-download"></i> vCard</a>
+              <a class="btn ghost" href="#" onclick="printProfile(event)"><i class="fa-solid fa-print"></i> Print</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="card">
+          <div class="card-header">
+            <h3>দক্ষতা</h3>
+            <p class="sub">Technology skills & competency</p>
+          </div>
+
+          <div class="skill-grid">
+            <div class="skill-item">
+              <div class="skill-head">
+                <span>JavaScript / TypeScript</span>
+                <span class="muted">95%</span>
+              </div>
+              <div class="bar"><i style="width:95%"></i></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-head">
+                <span>React / Next.js</span>
+                <span class="muted">92%</span>
+              </div>
+              <div class="bar"><i style="width:92%"></i></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-head">
+                <span>Node.js / Express</span>
+                <span class="muted">90%</span>
+              </div>
+              <div class="bar"><i style="width:90%"></i></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-head">
+                <span>Python / Django</span>
+                <span class="muted">86%</span>
+              </div>
+              <div class="bar"><i style="width:86%"></i></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-head">
+                <span>Databases (Mongo/Postgres)</span>
+                <span class="muted">88%</span>
+              </div>
+              <div class="bar"><i style="width:88%"></i></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-head">
+                <span>Cloud / DevOps</span>
+                <span class="muted">84%</span>
+              </div>
+              <div class="bar"><i style="width:84%"></i></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card">
+          <div class="card-header">
+            <h3>প্রকল্পসমূহ</h3>
+            <p class="sub">Selected case studies and links</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project">
+              <div class="thumb">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80&auto=format&fit=crop" alt="">
+              </div>
+              <div class="pmeta">
+                <h4>E-Commerce Platform</h4>
+                <p>Full-stack MERN solution with multi-tenant architecture and payment integration.</p>
+                <div class="project-tags">
+                  <span>React</span><span>Node</span><span>Stripe</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="thumb">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&auto=format&fit=crop" alt="">
+              </div>
+              <div class="pmeta">
+                <h4>Realtime Chat</h4>
+                <p>Socket.io based messaging with presence, typing indicators and delivery receipts.</p>
+                <div class="project-tags">
+                  <span>Socket.io</span><span>Redis</span><span>Kubernetes</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="thumb">
+                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&q=80&auto=format&fit=crop" alt="">
+              </div>
+              <div class="pmeta">
+                <h4>Analytics Dashboard</h4>
+                <p>Interactive dashboards with custom D3 visualizations and role based auth.</p>
+                <div class="project-tags">
+                  <span>React</span><span>D3</span><span>JWT</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <!-- RIGHT: sidebar -->
+      <aside class="sidebar">
+        <div class="card contact-card" id="contact">
+          <h4>যোগাযোগ</h4>
+          <p class="muted">Reach out for collaboration or hire</p>
+
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-envelope contact-ico"></i> <a href="mailto:rasel@example.com">rasel@example.com</a></li>
+            <li><i class="fa-solid fa-phone contact-ico"></i> <a href="tel:+8801XXXXXXXXX">+880 1X-XXXX-XXXX</a></li>
+            <li><i class="fa-solid fa-location-dot contact-ico"></i> Dhaka, Bangladesh</li>
+          </ul>
+
+          <div class="socials">
+            <a class="social" href="#"><i class="fa-brands fa-github"></i></a>
+            <a class="social" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="social" href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="card mini-card">
+          <h4>Quick Stats</h4>
+          <div class="mini-grid">
+            <div class="mini">
+              <div class="mini-num">34</div>
+              <div class="mini-label">Projects</div>
+            </div>
+            <div class="mini">
+              <div class="mini-num">12+</div>
+              <div class="mini-label">Clients</div>
+            </div>
+            <div class="mini">
+              <div class="mini-num">Full-time</div>
+              <div class="mini-label">Availability</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mini-card">
+          <h4>Resources</h4>
+          <div class="res-links">
+            <a class="btn ghost block" href="#" onclick="downloadPDF(event)"><i class="fa-solid fa-file-pdf"></i> Resume (PDF)</a>
+            <a class="btn ghost block" href="#" onclick="downloadPortfolio(event)"><i class="fa-solid fa-folder-open"></i> Portfolio</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="container footer">
+      <div>© <span id="year"></span> Md. Rasel Ahmed — All Rights Reserved</div>
+      <div class="muted">Built with ♥ — modern, accessible UI</div>
+    </footer>
+  </div>
+
+  <!-- Small JS (keeps HTML/CSS separate) -->
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // theme toggle (adds .light class to body)
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      const icon = themeToggle.querySelector('i');
+      icon.classList.toggle('fa-sun');
+      icon.classList.toggle('fa-moon');
+    });
+
+    // simple download stubs
+    function downloadVCard(e){ e.preventDefault(); /* same as earlier; user can replace */ alert('vCard download — placeholder'); }
+    function printProfile(e){ e.preventDefault(); window.print(); }
+    function downloadPDF(e){ e.preventDefault(); alert('Resume download placeholder'); }
+    function downloadPortfolio(e){ e.preventDefault(); alert('Portfolio download placeholder'); }
+  </script>
+</body>
+</html>
